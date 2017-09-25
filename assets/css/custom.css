@@ -103,7 +103,7 @@ body {
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
-  background: white;
+  background: rgba(150,206,180, 1);
   color: #000;
   padding-bottom: 5rem;
 }
@@ -128,7 +128,7 @@ body {
 /* Categories
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .categories {
-  background: white 
+  background: rgba(150,206,180, 1);
 }
 .categories .section-description { 
   margin-bottom: 4rem;
