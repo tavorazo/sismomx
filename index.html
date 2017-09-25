@@ -24,9 +24,14 @@
   <link rel="stylesheet" href="assets/css/custom.css">
   <link rel="stylesheet" href="assets/css/orTools.css">
 
+  <link rel="stylesheet" href="assets/fontello/css/font.css">
+
+
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="bower_components/slideout/dist/slideout.min.js" ></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -38,6 +43,23 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+
+<nav id="menu" style="display:none">
+    <span id="icon_close">x</span>
+    <br><br>
+    <div class="or-padding-left-25">
+      <h6 class="text-orange">Menu</h6>
+      <br>
+      <small>
+        <a href="index.html" class="text-green1"> <i class="icon-plus"></i> ¿Buscas ayuda? </a><br>
+        <a href="ayudar.html" class="text-green1"> <i class="icon-plus"></i> ¿Buscas ayudar? </a><br>
+        <a href="faq.html" class="text-green1"> <i class="icon-plus"></i> ¿Preguntas? </a><br>
+      </small>
+    </div>
+</nav>
+
+<main id="panel">
+  <i class="icon-th" id="icon_menu"></i>
   <div class="section hero">
     <div class="container">
       <div class="row">
@@ -45,6 +67,7 @@
           <h2 class="text-orange">SISMOMX <img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0024/2649/brand.gif?itok=xV4Kmgbp" style="width:25px"></h2>
           <h6>Centro de respuesta rápida para la ciudadanía. <br>Encuentra teléfonos de emergencia, albergues, localizador de personas y mapa de áreas críticas.</h6>
           <a class="button button-primary bg-green2 or-border-none" href="http://getskeleton.com"> ¿Buscas ayuda?</a>
+          <br>ó  <a href="ayudar.html" style="color:black">¿buscas ayudar?</a>
         </div>
       </div>
     </div>
@@ -228,23 +251,50 @@
     </div>
   </div>
 
-    <div class="section or-padding-50">
+  <div class="section or-padding-50">
     <div class="container or-text-left">
       <div class="row">
         <div class="one-two column value"><br>
           <h2 class="text-orange">SISMOMX <img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0024/2649/brand.gif?itok=xV4Kmgbp" style="width:25px"></h2>
-          <small class="">Sitio informativo en ayuda de los temblores pasados en México, <br>
+          <small class="">Sitio informativo de respuesta en ayuda a los temblores pasados en el centro de México. <br>
           Sitio replica de <a href="http://sismomexico.org/">sismomexico.org</a> <br>
-          créditos <a href="https://octaviorazo.website" target="_blank"><strong> @tavo </strong></a></small>
+          <a href="http://slack.codeandomexico.org/" style="color:black"><i class="demo-icon icon-slack"></i></a>
+          <a href="https://github.com/CodeandoMexico/terremoto-cdmx" style="color:black"><i class="demo-icon icon-github-circled"></i></a>
+          <a href="http://codeandomexico.org/" style="color:black"> CodeandoMexico </i></a>
 
+          <hr>
+          Dev. 
+          <a href="https://github.com/tavorazo" style="color:black"> <i class="demo-icon icon-github-circled"></i>  </a>
+          <a href="https://octaviorazo.website" target="_blank"><strong>@tavoRazo </strong></a></small>
         </div>
       </div>
-      
+
     </div>
   </div>
 
+</main>
 
 
+
+<script>
+  var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70,
+    'side': 'right'
+  });
+
+  $("#icon_menu").click(function(){
+    $("#menu").show()
+    slideout.open();
+    $("#icon_menu").hide()
+  })
+  $("#icon_close").click(function(){
+    slideout.close();
+    $("#icon_menu").show()
+  })
+</script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
