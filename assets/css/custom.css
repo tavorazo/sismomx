@@ -103,9 +103,7 @@ body {
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
-  background: linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,0.7)),url('../images/bg1.jpg');
-  background-size: cover;
-  background-attachment: fixed;
+  background: white;
   color: #000;
   padding-bottom: 5rem;
 }
@@ -130,8 +128,7 @@ body {
 /* Categories
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .categories {
-  background: linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,0.7)),url('../images/bg2.jpg');
-  background-size: cover;
+  background: white 
 }
 .categories .section-description { 
   margin-bottom: 4rem;
@@ -165,8 +162,13 @@ body {
   .hero-heading {
     font-size: 2.4rem;
   }
-  .values { background: white }
-  .categories { background: white }
+
+  .values { 
+    background: linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,0.7)),url('../images/bg1.jpg');background-size: cover; background-attachment: fixed; 
+  }
+  .categories { 
+    background: linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,0.7)),url('../images/bg2.jpg'); background-size: cover; 
+  }
 
 }
 
