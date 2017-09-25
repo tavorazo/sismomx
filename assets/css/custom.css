@@ -103,7 +103,7 @@ body {
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
-  background: linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,0.7)),url('../images/bg1.jpg');
+  background: linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,0.5)),url('../images/bg1.jpg');
   background-size: cover;
   background-attachment: fixed;
   color: #000;
@@ -130,7 +130,7 @@ body {
 /* Categories
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .categories {
-  background: linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,0.7)),url('../images/bg2.jpg');
+  background: linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,0.5)),url('../images/bg2.jpg');
   background-size: cover;
 }
 .categories .section-description { 
